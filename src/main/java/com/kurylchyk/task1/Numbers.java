@@ -1,19 +1,42 @@
 package com.kurylchyk.task1;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+
+/**
+ * Class Numbers that represents the odd and even numbers in the interval
+ *
+ */
 
 public class Numbers {
 
+    /**
+     * Stands for the begging of the interval.
+     */
     private final int to;
+    /**
+     * Stands for the end of the interval.
+     */
     private final int from;
-    private Integer[] fibonacci;
-    public Numbers (int from,int to){
 
+    /**
+     * array which will contains the sequence of fibonacci numbers.
+     */
+    private Integer[] fibonacci;
+
+    /**
+     * Constructor, which initialize 2 fields.
+     *
+     * @param from
+     * @param to
+     */
+    public Numbers (int from,int to){
         this.from = from;
         this.to = to;
     }
 
+    /**
+     * Prints the odd numbers in the interval.
+     */
     public void printOdd(){
 
         int pointer = from;
@@ -27,6 +50,9 @@ public class Numbers {
         System.out.println();
     }
 
+    /**
+     * Prints the even numbers in the interval.
+     */
     public void printEven(){
 
         int pointer = from;
@@ -40,6 +66,10 @@ public class Numbers {
         System.out.println();
     }
 
+    /**
+     * Calculate the sum of odd numbers.
+     * @return the sum of odd numbers
+     */
     public int sumOfOdd(){
 
         int pointer = from;
@@ -52,7 +82,10 @@ public class Numbers {
         return sumOfOdd;
     }
 
-
+    /**
+     * Calculate the sum of odd numbers.
+     * @return the sum of even numbers
+     */
     public int sumOfEven(){
 
         int pointer = from;
@@ -66,6 +99,11 @@ public class Numbers {
     }
 
 
+    /**
+     * Calculates the fibonacci numbers and add it to the ArrayList.
+     * Than initialize the @link fibonacci array.
+     * Prints all the numbers.
+     */
     public void printFibonacci () {
 
         ArrayList<Integer> fibonacciSequence  = new ArrayList<Integer>();
@@ -90,6 +128,11 @@ public class Numbers {
         System.out.println();
 
     }
+
+    /**
+     * Counts the percentage of odd and even numbers in @link fibonacci.
+     * Prints the percentage.
+     */
 
     public void getPercentage(){
 
