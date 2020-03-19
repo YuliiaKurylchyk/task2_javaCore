@@ -7,6 +7,8 @@ public class Main {
         Numbers numbers = new Numbers(5,20);
         numbers.printEven();
         numbers.printOdd();
+        numbers.printFibonacci();
+        numbers.getPercentage();
 
     }
 }
